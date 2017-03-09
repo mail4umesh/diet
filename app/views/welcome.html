@@ -1,0 +1,30 @@
+<style>
+button.redButton {
+	border-color: #cc3333;
+	background-image: url(images/red-button-bg.png);
+	background: -webkit-gradient(linear, left top, left bottom, from(#D3656D), to(#BC1320), color-stop(0.5, #C9404B), color-stop(0.5, #BC1421));
+	color:white;
+	font-family: "Helvetica";
+	font-size: 1em;
+}
+button.redButtonSelected {
+	background-image: url(images/red-button-sel-bg.png);
+	background: -webkit-gradient(linear, left top, left bottom, from(#AF333C), to(#880E17), color-stop(0.5, #952B33), color-stop(0.5, #870F18));
+}
+
+
+</style>
+<link href="./app/styles/header.css" rel="stylesheet" />
+	
+<div dojoType="dojox.mobile.View" selected="true">
+	
+	<h1 dojoType="dojox.mobile.Heading">Welcome</h1>
+
+	<div dojoType="dojox.mobile.RoundRect">Welcome to The 17 Day Diet. If you already know the basics or want to get started and learn as you go then just press Get Started.  If you want to learn more first then press Learn More.</div>
+	<div style="margin-left:30%;">
+		<button dojoType="dojox.mobile.Button" class="mblBlueButton learn" style="width:120px">Learn More</button>
+		<p></p>
+		<button dojoType="dojox.mobile.Button" class="redButton start" style="width:120px">Get Started</button>
+	</div>
+
+</div>

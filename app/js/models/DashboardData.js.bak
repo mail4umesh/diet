@@ -1,0 +1,78 @@
+dojo.provide('app.models.DashboardData');
+
+dojo.require('dojo.store.Memory');
+
+(function() {
+
+var store;
+
+app.models.DashboardData = {
+  /*load : function() {
+	  this.getInitialData(1);
+    if (store) { return store.data; }
+    return dojo.xhrGet({
+      url : './app/resources/data/dashboard.json',
+      handleAs : 'json',
+      load : function(data) {
+        store = new dojo.store.Memory({ data : data });
+      }
+    });
+	
+  },*/
+  load: function(cycle) {
+	  	if (store) { return store.data; }
+		
+		var newuser = "newUser";
+		if(!localStorage.getItem(newuser)){   //mohit: 1/8/2012:check to see if there is a dashboardData model to be loaded (ie something in localstorage) & if not then use the function above to create default data
+			this.getInitialData(cycle);
+		}
+		
+		var storedData = dojo.fromJson(localStorage.getItem(newuser));
+		
+		//create a data store object based off of the local storage object
+		store = new dojo.store.Memory();
+		
+		//this.setStoreDate(this.getCurrentDate()); // mohit: 1/9/2012
+		
+		if (storedData){
+			store.setData(storedData);	
+		} 
+		console.log(store)
+	},
+	
+  	getDashboardData: function(cycle) {         // mohit : 1/8/2012 : passing cycle in getDashboardData
+ 		return store.data[cycle];
+  	},
+	
+  	/*setStoreDate:function(date){				// mohit: 1/9/2012 : Store the date in local storage
+		localStorage.setItem("date",date);
+  	},
+	
+  	getStoreDate:function(){					// mohit: 1/9/2012 : Fatch the date from local storage
+	  	return localStorage.getItem('date');
+  	},*/
+ 
+ 	// Get The inital data when user open it first time
+  
+  	getInitialData: function(varcycle) {                 // mohit : function which would be populate 17 days of empty dashboard data and stores it in localstorage
+	  	var startingData = new Array();
+		var date = new Date();
+		
+	  	for(var i=0;i<17;i++){
+			var ndate = new Date(new Date(date.getFullYear(),date.getMonth(), date.getDate() + i));
+			var nextDate = ndate.getMonth() + "-" + ndate.getDate() + "-" + ndate.getFullYear();
+		  	startingData[i] = {cycle: varcycle,date: nextDate,meals : {input: "",required: "6" },exercise: {input: "",required: "17"	},h20: "",weight: ""}; //mohit: populate the # 6 for meals and exercise
+	  	}
+		localStorage.setItem("newUser",dojo.toJson({1:startingData}));         // mohit save in local storage
+	
+  	},
+  
+  	// mohit: 1/09/2012 Get the current data
+  	getCurrentDate:function(){
+	  	var date = new Date();
+		var currentDate = date.getMonth() + "-" + date.getDate() + "-" + date.getFullYear();
+		return currentDate;
+  	}
+};
+
+}());

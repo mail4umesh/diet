@@ -1,0 +1,31 @@
+<style>
+button.redButton {
+	border-color: #cc3333;
+	background-image: url(images/red-button-bg.png);
+	background: -webkit-gradient(linear, left top, left bottom, from(#D3656D), to(#BC1320), color-stop(0.5, #C9404B), color-stop(0.5, #BC1421));
+	color:white;
+	font-family: "Helvetica";
+	font-size: 1em;
+}
+button.redButtonSelected {
+	background-image: url(images/red-button-sel-bg.png);
+	background: -webkit-gradient(linear, left top, left bottom, from(#AF333C), to(#880E17), color-stop(0.5, #952B33), color-stop(0.5, #870F18));
+}
+</style>
+<div style="margin:25px; ">
+    <div>Which of these feature would you like to see next?</div>
+    <div style="margin-top:10px;">
+		<div><input type="radio" dojoType="dojox.mobile.RadioButton" checked="true" name="nextFeature" class="nextFeature" value="Recipe" /> Recipe</div>
+		<div><input type="radio" dojoType="dojox.mobile.RadioButton"  checked="false" name="nextFeature" class="nextFeature1" value="Food nutritional information
+" /> Food nutritional information</div>
+		<div><input type="radio" dojoType="dojox.mobile.RadioButton"  checked="false" name="nextFeature" class="nextFeature2" value="Forum" /> Forum</div>
+    </div>
+    <div style="margin-top:30px;">Any thing else you'd like to say?</div>
+    <div>
+		<textarea dojoType="dojox.mobile.TextArea" placeHolder="Enter comment" rows="4" class="anyThingElse" id="textbox1"></textarea>
+    </div>
+</div>
+
+<div style="margin-left:30%;">
+	<button dojoType="dojox.mobile.Button" class="redButton submitFeedback" style="width:120px">Submit</button>
+</div>

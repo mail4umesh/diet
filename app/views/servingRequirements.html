@@ -1,0 +1,57 @@
+<style>
+/* Mohit:01-02-2012 Remove the unwanted css content to remove the text & icons shifting problem   */
+.col1,
+.col2,
+.col3 {
+	float:left;
+	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+.threecol .col1 {
+	width:50%;			/* width of center column content (column width minus padding on either side) */
+	background:#eee;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.threecol .col2 {
+	width:30%;			/* Width of left column content (column width minus padding on either side) */
+	background:#fff;
+}
+.threecol .col3 {
+	width:20%;			/* Width of right column content (column width minus padding on either side) */
+	background:#f4f4f4;
+}
+
+</style>
+<div class="servingRequirements" dojoType="dojox.mobile.Overlay" content="test">
+		<div style="padding-bottom:230px;padding-top:15px;background-color: #60656f;background-image: -webkit-gradient(linear, left top, left bottom, from(#a6abb4), to(#5b616c), color-stop(0.1, #7b808b), color-stop(0.1, #60656f));">
+<!--
+			<div id="header">
+			header
+			</div>
+-->			
+			<div class="colmask threecol">
+                    <div class="col1">
+                        <b>Category:</b><div id="${food-category}"><br>Protein<br>Vegetables<br>Fruit<br>Good Fat<br><b>Total</b></div>
+                    </div>
+                    <div class="col2">
+                        <b>Goal:</b><div id="${food-recommended}"><br>3<br>Unlimited<br>1<br>0<br><b>4</b></div>
+                    </div>
+                    <div class="col3">
+                        <b>Today:</b><div id="${food-today}"><br>2<br>-<br>1<br>1<br><b>4</b>		</div>
+                    </div>
+					
+			</div>	
+			<!--
+			<div id="footer">
+				footer
+			</div>
+			-->
+			
+			
+			
+			
+		</div>
+</div>

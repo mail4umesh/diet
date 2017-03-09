@@ -1,0 +1,40 @@
+{
+    "12-21-2011": [
+        {
+			"id": "0",
+			"food":{
+				"name":"Apple",
+				"category":"Fruit"
+			},
+			"servings":"2 1/2",
+			"mealTime":"Breakfast"
+        },
+        {
+			"id": "1",
+			"food":{
+				"name":"Chicken",
+				"category":"Protein"
+			},
+			"servings":"1/2",
+			"mealTime":"Lunch"
+        },
+        {
+			"id": "2",
+			"food":{
+				"name":"Beef",
+				"category":"Protein"
+			},
+			"servings":"3 1/2",
+			"mealTime":"Dinner"
+        },
+        {
+			"id": "3",
+			"food":{
+				"name":"Tomatoe",
+				"category":"Vegetable"
+			},
+			"servings":"1",
+			"mealTime":"Snack"
+        }
+    ],
+}

@@ -1,0 +1,345 @@
+{
+    "cycle1": [
+        {
+            "Lean Protein": [
+				{
+					"food":"Canned light tuna",
+					"servings":""
+				},
+				{
+					"food":"Catfish",
+					"servings":""
+				},
+				{
+					"food":"Chicken breasts",
+					"servings":""
+				},
+				{
+					"food":"Eggs",
+					"servings":"2 eggs"
+				},
+				{
+					"food":"Egg whites",
+					"servings":"4 egg whites"
+				},
+				{
+					"food":"Fish",
+					"servings":""
+				},
+				{
+					"food":"Flounder",
+					"servings":""
+				},
+				{
+					"food":"Ground turkey (lean)",
+					"servings":""
+				},
+				{
+					"food":"Salmon (canned or fresh)",
+					"servings":""
+				},
+				{
+					"food":"Sole",
+					"servings":""
+				},
+				{
+					"food":"Tilapia",
+					"servings":""
+				},
+				{
+					"food":"Turkey breasts",
+					"servings":""
+				},
+			],
+			"Cleansing Vegetables": [		
+				{
+					"food":"Artichoke",
+					"servings":""
+				},
+				{
+					"food":"Artichoke hearts",
+					"servings":""
+				},
+				{
+					"food":"Asparagus",
+					"servings":""
+				},
+				{
+					"food":"Bell Pepper",
+					"servings":""
+				},
+				{
+					"food":"Broccoli",
+					"servings":""
+				},
+				{
+					"food":"Brussels sprouts",
+					"servings":""
+				},
+				{
+					"food":"cabbage",
+					"servings":""
+				},
+				{
+					"food":"carrots",
+					"servings":""
+				},
+				{
+					"food":"cauliflower",
+					"servings":""
+				},
+				{
+					"food":"celery",
+					"servings":""
+				},
+				{
+					"food":"cucumbers",
+					"servings":""
+				},
+				{
+					"food":"eggplant",
+					"servings":""
+				},
+				{
+					"food":"garlic",
+					"servings":""
+				},
+				{
+					"food":"green beans",
+					"servings":""
+				},
+				{
+					"food":"green leafy vegetables (including beet greens)",
+					"servings":""
+				},
+				{
+					"food":"turnip greens",
+					"servings":""
+				},
+				{
+					"food":"collard greens)",
+					"servings":""
+				},
+				{
+					"food":"kale",
+					"servings":""
+				},
+				{
+					"food":"leeks",
+					"servings":""
+				},
+				{
+					"food":"lettuce",
+					"servings":""
+				},
+				{
+					"food":"mushrooms",
+					"servings":""
+				},
+				{
+					"food":"okra",
+					"servings":""
+				},
+				{
+					"food":"onions",
+					"servings":""
+				},
+				{
+					"food":"parsley",
+					"servings":""
+				},
+				{
+					"food":"scallions",
+					"servings":""
+				},
+				{
+					"food":"spinach",
+					"servings":""
+				},
+				{
+					"food":"tomatoes",
+					"servings":""
+				},
+				{
+					"food":"watercress",
+					"servings":""
+				}																											
+				
+			],
+	        "Low-sugar fruits": [
+			{
+				"food":"Apples",
+				"servings":""
+			},
+			{
+				"food":"berries",
+				"servings":""
+			},
+			{
+				"food":"grapefruit",
+				"servings":""
+			},
+			{
+				"food":"red grapes",
+				"servings":""
+			},			
+			{
+				"food":"oranges",
+				"servings":""
+			},
+			{
+				"food":"peaches",
+				"servings":""
+			},
+			{
+				"food":"pears",
+				"servings":""
+			},
+			{
+				"food":"plums",
+				"servings":""
+			},
+			{
+				"food":"prickly pear cactus",
+				"servings":""
+			},
+			{
+				"food":"prunes",
+				"servings":""
+			}
+			],
+			"Probiotic foods": [
+			{
+				"food":"Yogurt",
+				"servings":"6 oz. container"
+			},
+			{
+				"food":"Kefir",
+				"servings":"1 cup"
+			},
+			{
+				"food":"Low-fat acidophilus milk",
+				"servings":"1 cup"
+			},
+			{
+				"food":"Yakult",
+				"servings":"Small 50-calorie bottle"
+			},
+			{
+				"food":"Breakstone LiveActive cottage cheese",
+				"servings":"1/2 cup"
+			},
+			{
+				"food":"Reduced salt miso dissolved in low-fat",
+				"servings":""
+			},
+			{
+				"food":"Low-sodium Broth",
+				"servings":"1 tbsp"
+			},
+			{
+				"food":"Tempeh",
+				"servings":"4 oz"
+			},
+			{
+				"food":"Sauerkraut",
+				"servings":"1/2 cup"
+			},
+			{
+				"food":"Kimchi",
+				"servings":"1/2 cup"
+			}
+			],
+			"Friendly fats": [
+			{
+				"food":"Fish oil",
+				"servings":""
+			},
+			{
+				"food":"Flaxseed oil",
+				"servings":""
+			},
+			{
+				"food":"Olive oil",
+				"servings":""
+			},
+			],
+			"Condiments": [
+			{
+				"food":"Salsa",
+				"servings":""
+			},
+			{
+				"food":"low-carb marinara sauce",
+				"servings":""
+			},
+			{
+				"food":"light soy sauce",
+				"servings":""
+			},
+			{
+				"food":"low-carb ketchup",
+				"servings":""
+			},
+			{
+				"food":"fat-free sour cream",
+				"servings":""
+			},
+			{
+				"food":"low-fat",
+				"servings":""
+			},
+			{
+				"food":"low-sodium broth",
+				"servings":""
+			},
+			{
+				"food":"Truvia",
+				"servings":""
+			},
+			{
+				"food":"sugar-free jams and jellies",
+				"servings":""
+			},
+			{
+				"food":"vegetable cooking spray",
+				"servings":""
+			},
+			{
+				"food":"fat-free cheeses",
+				"servings":""
+			},
+			{
+				"food":"fat-free salad dressing",
+				"servings":""
+			},
+			{
+				"food":"salt",
+				"servings":""
+			},
+			{
+				"food":"pepper",
+				"servings":""
+			},
+			{
+				"food":"vinegar",
+				"servings":""
+			},
+			{
+				"food":"mustard",
+				"servings":""
+			},
+			{
+				"food":"herbs and spices",
+				"servings":""
+			}			
+			]
+		}
+    ],
+    "cycle2": [
+    ],
+    "cycle3": [
+    ],
+    "cycle4": [
+    ]
+}

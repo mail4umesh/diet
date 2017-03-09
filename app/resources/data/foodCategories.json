@@ -1,0 +1,100 @@
+{
+    "cycle1": [
+        {
+			"id": 0,
+            "name":"Lean Proteins",
+			"servings":"Unlimited"
+		},
+		{
+			"id": 1,
+			"name": "Cleansing Vegetables",
+			"servings":"Unlimited"
+		},
+		{
+			"id": 2,
+			"name": "Low-sugar fruits",
+			"servings":"2 Max"
+		},
+		{
+			"id": 3,
+			"name": "Probiotic foods",
+			"servings":"2 Max"
+		},
+		{
+			"id": 4,
+			"name": "Friendly fats",
+			"servings":"2 Max"
+		},
+		{
+			"id": 5,
+			"name": "Condiments",
+			"servings":"Moderation"
+		},				
+    ],
+    "cycle2": [
+        {
+			"id": 0,
+            "name":"Protein",
+			"servings":"2"
+		},
+		{
+			"id": 1,		
+			"name": "Vegetables",
+			"servings":"4"
+		},
+		{
+			"id": 2,		
+			"name": "Fruit",
+			"servings":"2"
+		}
+    ],
+    "cycle3": [
+        {
+			"id": 0,
+            "name":"Protein",
+			"servings":"6"
+		},
+		{
+			"id": 1,
+			"name": "Vegetables",
+			"servings":"1"
+		},
+		{
+			"id": 2,
+			"name": "Fruit",
+			"servings":"0"
+		},
+		{
+			"id": 3,		
+			"name": "Carbs",
+			"servings": "2"
+		}
+    ],
+    "cycle4": [
+        {
+			"id": 0,
+            "name":"Protein",
+			"servings":"3"
+		},
+		{
+			"id": 1,		
+			"name": "Vegetables",
+			"servings":"2"
+		},
+		{
+			"id": 2,		
+			"name": "Fruit",
+			"servings":"1"
+		},
+		{
+			"id": 3,		
+			"name": "Carbs",
+			"servings":"3"
+		},
+		{
+			"id": 4,		
+			"name": "Junk Food",
+			"servings":"1"		
+		}
+    ]
+}

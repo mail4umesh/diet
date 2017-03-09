@@ -1,0 +1,117 @@
+<style>
+    li.dashboardItem {
+        width: 48%;
+		display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align:middle;
+		text-align:center;
+/*		border:solid 1px #76aec4; */
+		margin:0.4%;
+		padding-top:3.5%;
+		padding-bottom:3.5%;
+/*		background-color:#c8dfe9; */
+		list-style:none;
+/*		border:2px solid black;*/		
+/*
+		background-color: #3355ff;
+		-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+		*/
+    }
+	.dashBoardBox{
+		width: 84%;
+        min-height: 15%;
+        vertical-align: top;
+        _height: 250px;
+		background-color:#fff;
+		color:#293d45;
+		font-weight:500;
+		margin-left:8%;
+/*		border:2px solid black;*/
+	}
+
+	h4 {
+		background-image: url('app/resources/images/gridBanner.png');
+		text-align: center;
+		background-repeat:no-repeat;
+		background-size: 102% 100% ;
+		margin-left:-5px;
+		margin-right:-3px;
+		color:#FFF;
+		margin-top:0px;
+		height:40px;
+		line-height:40px;
+		vertical-align:middle;
+	}
+	
+	p.blocktext {
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 6em
+	}
+	
+</style>
+	<!-- not certain why but seems that we need to load in the stylesheet again if we want updated styles-->
+	<link href="./app/styles/header.css" rel="stylesheet" />
+	
+		<ul style='background:#c8dfe9; margin:0px; padding-left:0px; width:100%;background-image: url("./app/resources/images/dashboardDivider.png");background-repeat:repeat-y;'>
+			<li id="${menuId}" class="dashboardItem">
+            	<div class="dashBoardBox">
+		        <div style="height:140px; padding-top:5px; ">
+		            <h4>Meals</h4>
+					<div style="margin-left:0px; text-align:center;">
+		            	<div ><img src="./app/resources/images/mealsIcon.png" alt="lobster" width="35" style="margin-top:-5px; border-bottom:#293d45 solid 1px; padding-bottom:5px; margin-top:-15px;"/></div>
+                        
+                        <!-- Mohit 1/23/2012  assign unique Id for div to use to update the view of dashboard -->
+						<div style="font-weight:bold;font-size:0.9em;" id="${menuBalancedId}">${menuBalancedContent}</div>
+						<div style="font-size:0.9em;" >Servings</div>
+					</div>		
+		        </div>
+                </div>
+			</li>
+
+
+			<li id="${excerciseId}" class="dashboardItem">
+            <div class="dashBoardBox">
+		        <div style="height:140px; padding-top:5px; ">
+		            <h4>Excercise</h4>
+					<div style="margin-left:0px; text-align:center;">
+		            	<div><img src="./app/resources/images/exerciseIcon.png" alt="lobster" width="70px" style="margin-top:-5px; border-bottom:#293d45 solid 1px; padding-bottom:5px; margin-top:-15px;"/></div>
+                       <!-- Mohit 1/23/2012  assign unique Id for div to use to update the view of dashboard -->
+						<div style="font-weight:bold;font-size:0.9em;"  id="${excerciseBalancedId}">${excerciseBalancedContent}</div>
+						<div style="font-size:0.9em;">Minutes</div>
+					</div>
+		        </div>
+                </div>
+			</li>
+	
+		 	<div width="100%" style="height:0px;border-top:solid 1px #FFF;border-bottom:solid 1px #76aec4;"></div>
+	
+			<li id="${statsId}" class="dashboardItem">
+            <div class="dashBoardBox">
+		        <div style="height:140px; padding-top:5px; ">
+		            <h4>Progress</h4>
+                    <div style="margin-left:0px; text-align:center;">
+		            <img src="./app/resources/images/progressIcon.png"
+		            alt="lobster" width="70px"  />
+                    </div>
+		        </div>
+                </div>
+			</li>
+
+
+			<li id="${loggingId}" class="dashboardItem">
+            <div class="dashBoardBox">
+		        <div style="height:140px; padding-top:5px; ">
+		            <h4>Log</h4>
+				     <div style="margin-top:-10px;"><img src="./app/resources/images/scaleIcon.png" width="35px" style="margin-left:15px;margin-top:-5px; "/>
+		            <span style="font-weight:bold; "  id="${weightLoggingId}">${weightLoggingContent}</span></div>
+                    <div style="border-bottom:#293d45 solid 1px; padding-bottom:5px; width:50%; margin-left:25%; margin-bottom:10px;"></div>
+		            <img src="./app/resources/images/h20Icon.png" width="20"/>
+                    
+                    <!-- Mohit 1/23/2012  assign unique Id for div to use to update the view of dashboard -->
+		 			<span style="font-weight:bold;"   id="${waterLoggingId}">${waterLoggingContent}</span>
+		        </div>
+                </div>
+			</li>
+		</ul>
+				 	<div width="100%" style="height:0px;border-top:solid 1px #FFF;border-bottom:solid 1px #76aec4;"></div>

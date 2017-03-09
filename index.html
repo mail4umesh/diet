@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<!-- prevent cache -->
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	
+    <title>The 17 Day Diet</title>
+	<link href="dojo-release-1.7.0-src/dojox/mobile/themes/iphone/base.css" rel="stylesheet">
+	<link href="dojo-release-1.7.0-src/dojox/mobile/themes/iphone/TabBar.css" rel="stylesheet">
+	<link href="dojo-release-1.7.0-src/dojox/mobile/themes/common/domButtons.css" rel="stylesheet">
+	
+	<link href="app/styles/diet.css" rel="stylesheet" />
+    <link href="app/styles/jquery.mobile-1.0.1.min.css" rel="stylesheet" /> <!-- //Mohit:01-02-2012 Include jquery css to implement the dropdown style -->
+
+   <script>//window.resizeTo(400,600)</script>
+
+    <script>
+  var _dbpDev = true;
+  dojoConfig = _dbpDev ? {	
+      isDebug: true,
+    // when we use a local version of dojo, we don't need to specify
+    // a baseUrl like we do when we use a cdn-hosted dojo. the base
+    // url is set to be the location of the dojo.js script itself.
+    // we do, however, have to tell dojo where to find modules in
+    // non-dojo namespaces. for the "app" namespace, we indicate the
+    // location of the app directory relative to dojo.js.
+    modulePaths : {
+		app: "../../app/js"	
+    },
+    parseOnLoad: true
+  } : {};
+
+  </script>
+<script type="text/javascript" src="dojo-release-1.7.0-src/dojo/dojo.js"></script>
+	
+    <script type="text/javascript">
+        // Use the lightweight parser
+        dojo.require("dojox.mobile.parser");
+        // Require Dojo mobile
+        dojo.require("dojox.mobile");
+		// Get additional, non-standard dojox.mobile widgets
+		dojo.require("dojox.mobile.ScrollableView");
+		dojo.require('dojox.mobile.ContentPane');
+		dojo.require("dojox.mobile.deviceTheme"); //for extended transitions
+		
+		dojo.require("app.controllers.App");
+		
+        // Require the compat if the client isn't Webkit-based
+        dojo.requireIf(!dojo.isWebKit,"dojox.mobile.compat");
+		
+		dojo.ready(function(){
+			app.controllers.App.init();
+		});
+		
+    </script>
+    </head>
+    <body style="visibility:hidden;">
+    </body>
+</html>

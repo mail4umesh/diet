@@ -1,0 +1,78 @@
+{
+    "Cycle 1": [
+        {
+            "label": "Abs"
+            
+        },
+        {
+            "label": "Running"
+            
+        },
+        {
+            "label": "Walking"
+            
+        }
+    ],
+    "Cycle 2": [
+        {
+            "label": "Abs"
+            
+        },
+        {
+            "label": "Running"
+            
+        },
+        {
+            "label": "Walking"
+            
+        },
+        {
+            "label": "Swimming"
+            
+        }
+    ],
+    "Cycle 3": [
+        {
+            "label": "Abs"
+            
+        },
+        {
+            "label": "Pushups"
+            
+        },
+		{
+            "label": "Running"
+            
+        },
+        {
+            "label": "Walking"
+            
+        },
+        {
+            "label": "Swimming"
+            
+        }
+    ],
+    "Cycle 4": [
+        {
+            "label": "Abs"
+            
+        },
+        {
+            "label": "Pushups"
+            
+        },
+		{
+            "label": "Running"
+            
+        },
+        {
+            "label": "Walking"
+            
+        },
+        {
+            "label": "Swimming"
+            
+        }
+    ]
+}
